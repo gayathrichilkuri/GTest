@@ -2,12 +2,10 @@ provider "aws" {
   region = "us-east-2" 
 }
 
-module "user1" {
+
+module "example" {
   source     = "../MODULE"
-  user_name  = "user1"
+  user_names = ["user1", "user2", "user3"]
 }
 
-module "user2" {
-  source     = "../MODULE"
-  user_name  = "user2"
-}
+
